@@ -10,11 +10,11 @@ CREATE TABLE RecordsTable (
     DOLocationID INT,
     fare_amount DECIMAL(10, 2),
     tip_amount DECIMAL(10, 2)
-);
-CREATE INDEX IX_PULocationID ON RecordsTable (PULocationID);
-CREATE INDEX IX_trip_distance ON RecordsTable (trip_distance);
-CREATE INDEX IX_tpep_pickup_datetime ON RecordsTable (tpep_pickup_datetime);
+); __
+CREATE INDEX IX_PULocationID ON RecordsTable (PULocationID); __
+CREATE INDEX IX_trip_distance ON RecordsTable (trip_distance); __
+CREATE INDEX IX_tpep_pickup_datetime ON RecordsTable (tpep_pickup_datetime); __
 
 
-Note: You should change connection string DatabaseOperations class line 33 to Your own connection string to work(I do not have resources to deploy it)
+Note: You should change connection string DatabaseOperations class line 33 to Your own connection string to work(I do not have resources to deploy it) __
 For larger datas I will definitely use multithreading for inserting. I will read from file in multiple threads and insert it to database.
